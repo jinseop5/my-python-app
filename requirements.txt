@@ -3,3 +3,4 @@ requests
 numpy
 pandas
 python-telegram-bot
+gunicorn
