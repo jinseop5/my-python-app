@@ -2,13 +2,14 @@ import requests
 import time
 import pandas as pd
 from telegram import Bot
+import os
 
 # 🔹 텔레그램 봇 정보 입력 (BotFather에서 발급)
 TELEGRAM_BOT_TOKEN = "8025718450:AAHPdi-tgOhY-OqWTV8RvmN_T9betoCwpto"
 TELEGRAM_CHAT_ID = "7752168245"
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
-
+PORT = os.environ.get("PORT", 8080)
 # 🔹 업비트 API 엔드포인트
 UPBIT_TICKER_INFO_URL = "https://api.upbit.com/v1/ticker"
 UPBIT_CANDLES_URL = "https://api.upbit.com/v1/candles/minutes/5"
