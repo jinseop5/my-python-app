@@ -6,7 +6,7 @@ from flask import Flask
 import os
 
 # 🔹 텔레그램 봇 정보 입력 (BotFather에서 발급)
-TELEGRAM_BOT_TOKEN = "8025718450:AAHPY-OqWTV8RvmN_T9betoCwpto"
+TELEGRAM_BOT_TOKEN = "8025718450:AAHPdi-tgOhY-OqWTV8RvmN_T9betoCwpto"
 TELEGRAM_CHAT_ID = "7752168245"
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
