@@ -6,7 +6,7 @@ from flask import Flask
 import os
 
 # 🔹 텔레그램 봇 정보 입력 (BotFather에서 발급)
-TELEGRAM_BOT_TOKEN = "8025718450:AAHPdi-tgOhY-OqWTV8RvmN_T9betoCwpto"
+TELEGRAM_BOT_TOKEN = "8025718450:AAHPY-OqWTV8RvmN_T9betoCwpto"
 TELEGRAM_CHAT_ID = "7752168245"
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
@@ -100,6 +100,9 @@ def check_conditions():
                 bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=message)
                 alert_sent[ticker] = time.time()
                 print(message)
+
+# 🔹 봇 시작 메시지 전송
+bot.send_message(chat_id=TELEGRAM_CHAT_ID, text="🚀 봇이 시작되었습니다!")
 
 # 🔹 1분마다 실행 + 1시간마다 상태 메시지 전송
 start_time = time.time()
