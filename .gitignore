@@ -1,0 +1,16 @@
+# 가상 환경 폴더 무시 (venv)
+venv/
+.VENV/
+env/
+ENV/
+
+# Python 컴파일된 파일 및 캐시 파일 무시
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 기타 IDE 환경 설정 파일 무시 (선택 사항)
+.vscode/
+.idea/
+*.sublime-workspace
